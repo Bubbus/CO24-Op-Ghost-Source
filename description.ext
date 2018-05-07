@@ -25,9 +25,9 @@ class Header
 // F3 - Loading Screen
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
-onLoadName = "*** Insert mission name here. ***";
-onLoadMission = "Made with the F3_CA Mission Development Framework";
-author = "*** Insert mission author name here. ***";
+onLoadName = "Operation Ghost Source";
+onLoadMission = "Zombie virus?  No, not us.";
+author = "Bubbus";
 loadScreen = "ca_logo_large.jpg";
 
 // ============================================================================================
@@ -164,8 +164,8 @@ class CfgDebriefing
 {
 	class End1
 	{
-		title = "Ending #1";
-		subtitle = "";
+		title = "Successful extraction";
+		subtitle = "Now if anyone asks, it wasn't us.";
 		description = "Please post to the AAR thread!";
 		// pictureBackground = "";
 		// picture = "";
@@ -174,8 +174,8 @@ class CfgDebriefing
 
 	class End2
 	{
-		title = "Ending #2";
-		subtitle = "";
+		title = "Mission failure";
+		subtitle = "It's not the winning that counts, it's being taken apart.";
 		description = "Please post to the AAR thread!";
 		// pictureBackground = "";
 		// picture = "";
@@ -184,8 +184,8 @@ class CfgDebriefing
 
 	class End3
 	{
-		title = "Ending #3";
-		subtitle = "";
+		title = "Lone survivor";
+		subtitle = "Hollywood awaits.";
 		description = "Please post to the AAR thread!";
 		// pictureBackground = "";
 		// picture = "";
@@ -459,6 +459,10 @@ class CfgFunctions
 			class addVehicleToZeus
 			{
 				file = "bub\bub_fnc_addVehicleToZeus.sqf";
+			};
+			class briefcaseLocated
+			{
+				file = "bub\bub_fnc_briefcaseLocated.sqf";
 			};
 		};
 	};
